@@ -5,7 +5,7 @@ import styles from './Hero.module.css'
 
 const Hero = () => {
     return (
-        <div className={styles.hero}>
+        <section className={styles.hero}>
             <div className="text-center max-w-2xl">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Unlock Your Dream Home!</h1>
                 <p className="text-lg md:text-xl mb-6">
@@ -16,7 +16,7 @@ const Hero = () => {
                     <RiArrowRightLine className='ml-2' />
                 </button>
             </div>
-        </div>
+        </section>
     );
 };
 
