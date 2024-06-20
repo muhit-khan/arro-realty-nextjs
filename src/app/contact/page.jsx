@@ -1,6 +1,40 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 
 const Page = () => {
+    const [formStatus, setFormStatus] = useState('');
+    const [formMessage, setFormMessage] = useState('');
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setFormStatus('');
+        setFormMessage('');
+
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                setFormStatus('success');
+                setFormMessage('Your message has been sent successfully!');
+            } else {
+                setFormStatus('error');
+                setFormMessage('There was an issue sending the message. Please try again.');
+            }
+        } catch (error) {
+            setFormStatus('error');
+            setFormMessage('There was an issue sending the message. Please try again.');
+        }
+    };
+
     return (
         <main className='bg-blue-950 h-full flex justify-center items-center pt-28'>
             <div className='container mt-10 mb-20'>
@@ -48,7 +82,7 @@ const Page = () => {
                     <div className=''>
                         <h3 className="text-xl font-bold mb-4">Leave us a message</h3>
 
-                        <form action="https://api.web3forms.com/submit" method="POST" className="space-y-8">
+                        <form onSubmit={handleSubmit} className="space-y-8">
                             <input type="hidden" name="access_key" value={process.env.WEB3_FORMS_ACCESS_KEY} />
 
                             <div className="grid grid-cols-2 gap-4">
@@ -81,6 +115,11 @@ const Page = () => {
                             </div>
                             <p>By submitting this form you agree to our terms and conditions and our privacy policy which explains how we may collect, use and disclose your personal information including to third parties.</p>
                             <button type="submit" className="bg-amber-500 font-semibold text-gray-900 py-2 px-6 rounded-full hover:bg-amber-600 active:bg-amber-500">Send message</button>
+                            {formStatus && (
+                                <p className={`mt-4 text-sm ${formStatus === 'success' ? 'text-green-500' : 'text-red-500'}`}>
+                                    {formMessage}
+                                </p>
+                            )}
                         </form>
                     </div>
                 </div>
