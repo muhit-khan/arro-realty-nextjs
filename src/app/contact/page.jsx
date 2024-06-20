@@ -36,7 +36,7 @@ const Page = () => {
     };
 
     return (
-        <main className='bg-blue-950 h-full flex justify-center items-center pt-28'>
+        <main className='bg-blue-950 h-full min-h-screen flex justify-center items-center pt-28'>
             <div className='container mt-10 mb-20'>
                 <h2 className='text-4xl font-bold text-center text-amber-500 mb-8'>Get in Touch</h2>
                 <p className="text-center text-lg text-gray-50 mb-10">
