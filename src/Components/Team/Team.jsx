@@ -30,7 +30,7 @@ const Team = () => {
     };
 
     return (
-        <section className='bg-blue-950'>
+        <section className='bg-blue-950' id='team'>
             {/* <div className='container mx-auto px-4 py-10'> */}
             <div className='bg-blue-950 container mx-auto px-4 py-10'>
                 <h2 className='text-4xl font-bold text-center text-amber-500 mb-8'>The Faces Behind Arro Realty</h2>

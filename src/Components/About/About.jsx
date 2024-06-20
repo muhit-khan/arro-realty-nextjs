@@ -4,7 +4,7 @@ import portrait from "../../../public/images/user-1.png"
 
 const About = () => {
     return (
-        <section className='bg-blue-950'>
+        <section className='bg-blue-950' id='about'>
             <div className='container mx-auto px-4 pt-20 pb-10'>
                 <h2 className='text-4xl font-bold text-center text-amber-500 mb-8'>About us</h2>
                 <div className='grid grid-cols-1 gap-4 lg:grid-cols-3'>

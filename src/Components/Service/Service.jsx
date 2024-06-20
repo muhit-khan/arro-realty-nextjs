@@ -36,7 +36,7 @@ const services = [
 
 const Service = () => {
     return (
-        <section className={style.service}>
+        <section className={style.service} id='service'>
             <div className="container mx-auto px-4 py-10">
                 <h2 className='text-4xl font-bold text-center text-amber-500 mb-8'>Our services</h2>
                 <p className="text-center text-lg text-gray-50 mb-10">We offer a wide range of real estate services to meet your needs. Whether you are buying, selling, or investing in property, our experienced team is here to help you every step of the way.</p>

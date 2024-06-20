@@ -30,9 +30,9 @@ const Navbar = () => {
                 </Link>
                 <ul className="flex items-center space-x-6">
                     <li className="hover:text-amber-600 active:text-amber-500"><Link href='/'>Home</Link></li>
-                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='/about'>About</Link></li>
-                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='/services'>Services</Link></li>
-                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='/team'>Team</Link></li>
+                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='#about'>About</Link></li>
+                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='#service'>Services</Link></li>
+                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='#team'>Team</Link></li>
                     <li className="hover:text-amber-600 active:text-amber-500"><Link href="/contact">Contact</Link></li>
                     <li>
                         <Link href="/properties">
