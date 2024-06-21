@@ -29,11 +29,11 @@ const Navbar = () => {
                     <Image src={logo} alt="Logo" className="w-44" />
                 </Link>
                 <ul className="flex items-center space-x-6">
-                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='/'>Home</Link></li>
-                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='/#about'>About</Link></li>
-                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='/#service'>Services</Link></li>
-                    <li className="hover:text-amber-600 active:text-amber-500"><Link href='/#team'>Team</Link></li>
-                    <li className="hover:text-amber-600 active:text-amber-500"><Link href="/contact">Contact</Link></li>
+                    <li className="text-white hover:text-amber-600 active:text-amber-500"><Link href='/'>Home</Link></li>
+                    <li className="text-white hover:text-amber-600 active:text-amber-500"><Link href='/#about'>About</Link></li>
+                    <li className="text-white hover:text-amber-600 active:text-amber-500"><Link href='/#service'>Services</Link></li>
+                    <li className="text-white hover:text-amber-600 active:text-amber-500"><Link href='/#team'>Team</Link></li>
+                    <li className="text-white hover:text-amber-600 active:text-amber-500"><Link href="/contact">Contact</Link></li>
                     <li>
                         <Link href="/properties">
                             <button className="bg-amber-500 font-semibold text-gray-900 py-2 px-6 rounded-full hover:bg-amber-600 active:bg-amber-500">
