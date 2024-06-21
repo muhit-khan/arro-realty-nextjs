@@ -9,6 +9,7 @@ Welcome to the Arro Realty project! This repository contains the source code for
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -37,6 +38,17 @@ Arro Realty is a modern real estate website designed to showcase properties and 
 - **CSS Modules**: For scoped and modular CSS.
 - **API Integration**: Connects to backend services for property data.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+
+## Screenshots
+![image](https://github.com/muhit-khan/arro-realty-nextjs/assets/68416439/4a94acf3-9de3-4bd8-b397-b2971251d2e2)
+![image](https://github.com/muhit-khan/arro-realty-nextjs/assets/68416439/9419933d-3823-4db4-9e66-edf03f16ef55)
+![image](https://github.com/muhit-khan/arro-realty-nextjs/assets/68416439/93327217-2143-4305-ac04-a6b77daf6eb5)
+![image](https://github.com/muhit-khan/arro-realty-nextjs/assets/68416439/2f54420c-de22-4950-bd89-95f7046fc9d1)
+![image](https://github.com/muhit-khan/arro-realty-nextjs/assets/68416439/d8b67c34-e4c6-4a6f-81d4-6b92ee541873)
+![image](https://github.com/muhit-khan/arro-realty-nextjs/assets/68416439/aa54d040-6665-49c3-8432-e2f13c020074)
+![image](https://github.com/muhit-khan/arro-realty-nextjs/assets/68416439/be6c2618-2959-44d5-9816-5e6cc1b5158a)
+
+
 
 ## Getting Started
 
